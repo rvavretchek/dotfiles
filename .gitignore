@@ -1,0 +1,4 @@
+# Nunca commitar chaves privadas ou segredos
+ssh/id_*
+ssh/known_hosts*
+ssh/authorized_keys
