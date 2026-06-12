@@ -3,3 +3,38 @@ Host github.com
     User git
     IdentityFile ~/.ssh/id_ed25519
     AddKeysToAgent yes
+
+# ubt-dev01 — Frappe/ERPNext/Arandu/Redis (esta VM)
+Host ubt-dev01 arandu.integrit.lab ubt-dev01.integrit.lab
+    HostName 192.168.68.31
+    User operador01
+    IdentityFile ~/.ssh/id_ed25519
+    AddKeysToAgent yes
+
+# ubt-dns01 — DNS (BIND) / NGINX / GitHub Runner
+Host ubt-dns01 ns1.integrit.lab ubt-dns01.integrit.lab
+    HostName 192.168.68.11
+    User operador01
+    IdentityFile ~/.ssh/id_ed25519
+    AddKeysToAgent yes
+
+# ubt-ap01 — Keycloak
+Host ubt-ap01 keycloak.integrit.lab ubt-ap01.integrit.lab
+    HostName 192.168.68.21
+    User operador01
+    IdentityFile ~/.ssh/id_ed25519
+    AddKeysToAgent yes
+
+# ubt-ap02 — HashiCorp Vault
+Host ubt-ap02 vault.integrit.lab ubt-ap02.integrit.lab
+    HostName 192.168.68.22
+    User operador01
+    IdentityFile ~/.ssh/id_ed25519
+    AddKeysToAgent yes
+
+# ubt-db01 — MariaDB / PostgreSQL
+Host ubt-db01 ubt-db01.integrit.lab
+    HostName 192.168.68.61
+    User operador01
+    IdentityFile ~/.ssh/id_ed25519
+    AddKeysToAgent yes
